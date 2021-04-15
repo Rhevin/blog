@@ -1,7 +1,7 @@
 baseURL = "https://rhev.in"
 languageCode = "en-us"
 title = "Rhevin Blog"
-theme = "hugo-theme-hello-friend-ng"
+theme = "hermit"
 paginate = 10
 enableEmoji = true
 enableGitInfo = true
