@@ -3,6 +3,10 @@ languageCode = "en-us"
 title = "Rhevin Blog"
 theme = "hugo-theme-hello-friend-ng"
 paginate = 10
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = true
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -23,6 +27,9 @@ paginate = 10
   description = "Rhevin Personal Blog"
   keywords = "homepage, blog"
   images = [""]
+  author = "Rhevin"
+  github = "https://github.com/rhevin"
+  sitename = "Rhevin"
 
 [taxonomies]
     category = "blog"
