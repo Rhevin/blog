@@ -1,59 +1,58 @@
 baseURL = "https://rhev.in"
 languageCode = "en-us"
-title = "Rhevin Blog"
+defaultContentLanguage = "en"
+title = "Rhevin"
 theme = "hermit"
-paginate = 10
-enableEmoji = true
-enableGitInfo = true
-enableRobotsTXT = true
-canonifyURLs = true
+# enableGitInfo = true
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+rssLimit = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
+
+[author]
+  name = "Rhev"
+
+[blackfriday]
+  # hrefTargetBlank = true
+  # noreferrerLinks = true
+  # nofollowLinks = true
+
+[taxonomies]
+  tag = "tags"
 
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
-
-  # Subtitle for home
-  homeSubtitle = "Rhevin's Personal Blog"
-
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  disableReadOtherPosts = false
-
-  # Enable sharing buttons, if you like
-  enableSharingButtons = true
+  dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  description = "Rhevin Personal Blog"
-  keywords = "homepage, blog"
-  images = [""]
-  author = "Rhevin"
-  github = "https://github.com/rhevin"
-  sitename = "Rhevin"
+  # description = ""
+  # images = [""]
+  themeColor = "#494f5c"
 
-[taxonomies]
-    category = "blog"
-    tag      = "tags"
-    series   = "series"
+  homeSubtitle = "Rhevin's Blog"
+  footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
-[languages]
-  [languages.en]
-    title = "Rhevin's Personal Blog"
-    subtitle = "Just another blog"
-    keywords = ""
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-    readOtherPosts = "Read other posts"
+  justifyContent = false  # Set "text-align: justify" to `.content`.
 
-    [languages.en.params.logo]
-      logoText = "Home"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
+  relatedPosts = true
 
-  # And you can even create generic menu
+  code_copy_button = true
+  
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/"
+
+[menu]
+
   [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
+    name = "Posts"
+    url = "posts/"
+    weight = 10
+
+  [[menu.main]]
+    name = "About"
+    url = "about-rhevin/"
+    weight = 20
