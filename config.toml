@@ -41,6 +41,8 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 
   code_copy_button = true
   
+  commentoJsURL = "https://c.rhev.in/js/commento.js"
+
   [[params.social]]
     name = "github"
     url = "https://github.com/"
