@@ -12,7 +12,7 @@ minify:
   minifyOutput: true
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production
   title: Rhevin Blog
   description: "a System Engineer Note"
   keywords: [Blog, Portfolio]
